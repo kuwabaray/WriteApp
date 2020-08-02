@@ -1,1 +1,1 @@
-dependencies: /Users/yukiya/Documents/WriteApp/Script/MyUtils.mm
+dependencies: /Users/yukiya/Documents/WriteApp/Utility/MyUtils.mm

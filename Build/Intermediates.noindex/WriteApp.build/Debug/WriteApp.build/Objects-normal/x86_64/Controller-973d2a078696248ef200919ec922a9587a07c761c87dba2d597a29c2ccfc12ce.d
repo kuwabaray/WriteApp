@@ -1,10 +1,10 @@
-dependencies: /Users/yukiya/Documents/WriteApp/Script/Controller.mm \
-  /Users/yukiya/Documents/WriteApp/Script/Controller.h \
-  /Users/yukiya/Documents/WriteApp/Script/Viewer.hpp \
-  /Users/yukiya/Documents/WriteApp/Script/Contents.hpp \
-  /Users/yukiya/Documents/WriteApp/Script/Line.hpp \
-  /Users/yukiya/Documents/WriteApp/Script/Point.hpp \
-  /Users/yukiya/Documents/WriteApp/Script/Connect_Python.hpp \
+dependencies: /Users/yukiya/Documents/WriteApp/Class/Controller.mm \
+  /Users/yukiya/Documents/WriteApp/Class/Controller.h \
+  /Users/yukiya/Documents/WriteApp/Class/Viewer.hpp \
+  /Users/yukiya/Documents/WriteApp/Class/Contents.hpp \
+  /Users/yukiya/Documents/WriteApp/Class/Line.hpp \
+  /Users/yukiya/Documents/WriteApp/Class/Point.hpp \
+  /Users/yukiya/Documents/WriteApp/Class/Connect_Python.hpp \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/Python.h \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/patchlevel.h \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/pyconfig.h \

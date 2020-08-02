@@ -98,6 +98,26 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		3730B8BC24D69DE10052DEB0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				37A3370824CD506900FC3926 /* MyUtils.mm */,
+				370BCCE924CD6E42004C48FA /* MyUtils.h */,
+				370BCCF524CFF441004C48FA /* stb_image.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3730B8BD24D6A10F0052DEB0 /* Other_Source */ = {
+			isa = PBXGroup;
+			children = (
+				370BCCEA24CD9803004C48FA /* gcvision_api.py */,
+				37C2578524B83AA800B09930 /* shader.vert */,
+				37C2578724B83AC800B09930 /* shader.frag */,
+			);
+			path = Other_Source;
+			sourceTree = "<group>";
+		};
 		376BE24A24D419130032D1C5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +131,10 @@
 		37C2574A24B837E500B09930 = {
 			isa = PBXGroup;
 			children = (
+				3730B8BD24D6A10F0052DEB0 /* Other_Source */,
+				3730B8BC24D69DE10052DEB0 /* Utility */,
 				370BCCED24CEA974004C48FA /* Image */,
-				37C2575524B837E500B09930 /* Script */,
+				37C2575524B837E500B09930 /* Class */,
 				376BE24A24D419130032D1C5 /* Resource */,
 				37C2575424B837E500B09930 /* Products */,
 				37C2576724B8380400B09930 /* Frameworks */,
@@ -127,7 +149,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37C2575524B837E500B09930 /* Script */ = {
+		37C2575524B837E500B09930 /* Class */ = {
 			isa = PBXGroup;
 			children = (
 				37C2578124B839B600B09930 /* Controller.mm */,
@@ -136,19 +158,13 @@
 				37C2576D24B8382500B09930 /* Viewer.hpp */,
 				37C2577024B8385700B09930 /* Contents.hpp */,
 				37C2576F24B8385700B09930 /* Contents.cpp */,
+				37C257B324BC02D900B09930 /* Connect_Python.cpp */,
+				376BE24924D406650032D1C5 /* Connect_Python.hpp */,
 				37C2577B24B8393E00B09930 /* Line.cpp */,
 				37C2577C24B8393E00B09930 /* Line.hpp */,
 				37C2577F24B8396100B09930 /* Point.hpp */,
-				37C257B324BC02D900B09930 /* Connect_Python.cpp */,
-				376BE24924D406650032D1C5 /* Connect_Python.hpp */,
-				37A3370824CD506900FC3926 /* MyUtils.mm */,
-				370BCCE924CD6E42004C48FA /* MyUtils.h */,
-				370BCCEA24CD9803004C48FA /* gcvision_api.py */,
-				370BCCF524CFF441004C48FA /* stb_image.h */,
-				37C2578524B83AA800B09930 /* shader.vert */,
-				37C2578724B83AC800B09930 /* shader.frag */,
 			);
-			path = Script;
+			path = Class;
 			sourceTree = "<group>";
 		};
 		37C2576724B8380400B09930 /* Frameworks */ = {

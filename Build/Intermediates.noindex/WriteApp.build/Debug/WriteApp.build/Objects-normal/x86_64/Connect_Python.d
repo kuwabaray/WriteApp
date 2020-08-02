@@ -1,5 +1,5 @@
-dependencies: /Users/yukiya/Documents/WriteApp/Script/Connect_Python.cpp \
-  /Users/yukiya/Documents/WriteApp/Script/Connect_Python.hpp \
+dependencies: /Users/yukiya/Documents/WriteApp/Class/Connect_Python.cpp \
+  /Users/yukiya/Documents/WriteApp/Class/Connect_Python.hpp \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/Python.h \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/patchlevel.h \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/pyconfig.h \
@@ -87,4 +87,4 @@ dependencies: /Users/yukiya/Documents/WriteApp/Script/Connect_Python.cpp \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/fileutils.h \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/pyfpe.h \
   /Library/Frameworks/Python.framework/Versions/3.8/include/python3.8/tracemalloc.h \
-  /Users/yukiya/Documents/WriteApp/Script/MyUtils.h
+  /Users/yukiya/Documents/WriteApp/Utility/MyUtils.h

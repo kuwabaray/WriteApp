@@ -1,4 +1,4 @@
-dependencies: /Users/yukiya/Documents/WriteApp/Script/Contents.cpp \
-  /Users/yukiya/Documents/WriteApp/Script/Contents.hpp \
-  /Users/yukiya/Documents/WriteApp/Script/Line.hpp \
-  /Users/yukiya/Documents/WriteApp/Script/Point.hpp
+dependencies: /Users/yukiya/Documents/WriteApp/Class/Contents.cpp \
+  /Users/yukiya/Documents/WriteApp/Class/Contents.hpp \
+  /Users/yukiya/Documents/WriteApp/Class/Line.hpp \
+  /Users/yukiya/Documents/WriteApp/Class/Point.hpp
