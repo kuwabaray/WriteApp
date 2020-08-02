@@ -23,8 +23,8 @@ https://youtu.be/OL59D4prw3Q
 
 Enterキーを押すと、ウィンドウをスクリーンショットのように画像データにして、Google Cloud Vision API に送信します。
 
-C++にPythonを組み込み(WriteApp/Script/Connect_Python.hpp), 
-Google Cloud Vision API を叩くPythonファイル(WriteApp/Script/gcvision_api.py)を呼び出しています。
+C++にPythonを組み込み(WriteApp/Class/Connect_Python.hpp), 
+Google Cloud Vision API を叩くPythonファイル(WriteApp/Other_Source/gcvision_api.py)を呼び出しています。
 
 # 注意事項
-WriteApp/Script/gcvision_api.py のAPI_KEYを独自のGoogle Cloud Vision APIのキーに書き換えないと動作しません。
+WriteApp/Other_Source/gcvision_api.py のAPI_KEYを独自のGoogle Cloud Vision APIのキーに書き換えないと動作しません。
