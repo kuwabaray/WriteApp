@@ -8,6 +8,7 @@
 #import "Controller.h"
 #import <Appkit/Appkit.h>
 
+
 @implementation Controller
 
 @synthesize glView;
@@ -24,11 +25,9 @@ BOOL shouldStop = NO;
 
 -(id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag{
 if(self = [super initWithContentRect:contentRect styleMask:aStyle backing:bufferingType defer:flag]){
-    //sets the title of the window (Declared in Plist)
+    
     [self setTitle:[[NSProcessInfo processInfo] processName]];
  
-    //This is pretty important.. OS X starts always with a context that only supports openGL 2.1
-    //This will ditch the classic OpenGL and initialises openGL 4.1
     NSOpenGLPixelFormatAttribute pixelFormatAttributes[] ={
         NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
             NSOpenGLPFAColorSize    , 24                           ,
@@ -40,13 +39,11 @@ if(self = [super initWithContentRect:contentRect styleMask:aStyle backing:buffer
     };
 
     NSOpenGLPixelFormat* format = [[NSOpenGLPixelFormat alloc]initWithAttributes:pixelFormatAttributes];
-    //Initialize the view
+    
     glView = [[NSOpenGLView alloc]initWithFrame:contentRect pixelFormat:format];
     
-    //Set context and attach it to the window
     [[glView openGLContext]makeCurrentContext];
   
-    //finishing off
     [self setContentView:glView];
         [glView prepareOpenGL];
         [self makeKeyAndOrderFront:self];
@@ -62,6 +59,9 @@ if(self = [super initWithContentRect:contentRect styleMask:aStyle backing:buffer
     }
 
 -(Point2D) convertPos:(NSPoint) point{
+    const int WIDTH = glView.frame.size.width;
+    const int HEIGHT = glView.frame.size.height;
+    
     float x = (point.x - (WIDTH/2))/(WIDTH/2);
     float y = (point.y - (HEIGHT/2))/(HEIGHT/2);
     Point2D p2(x, y);
@@ -119,7 +119,7 @@ if(self = [super initWithContentRect:contentRect styleMask:aStyle backing:buffer
     /*space*/
     else if([event keyCode] == 49){
         signed char* byteData =[self CaptureScreen];
-        _connector.hit_api(byteData);
+        connector.hit_api(byteData);
     }
 }
 
@@ -152,7 +152,7 @@ NSInteger resolution = 100;
     NSData *jpegData = [rep representationUsingType:NSBitmapImageFileTypeJPEG properties:pJpeg];
     bool result = [ jpegData writeToFile : @"./test.jpeg" atomically : NO ];
     if(!result){
-     std::cout << "fail to save image" << '\n';
+        NSLog(@"fail to save image");
     }
     
     signed char* array = (signed char*) [jpegData bytes];
@@ -170,3 +170,4 @@ NSInteger resolution = 100;
  
 
 @end
+

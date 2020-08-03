@@ -8,25 +8,27 @@
 
 #include <Cocoa/Cocoa.h>
 
-const char *pathForResource(const char *name)
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:name]ofType: nil];
-    return [path fileSystemRepresentation];
-}
+namespace WriteApp{
 
-char *dirForResource(const char *name){
-    const char* path = pathForResource(name);
-    auto len =  strlen(path);
-    char* dir = (char*)malloc(len*sizeof(char));
-    int sep = 0;
-    for(int i =0; i<len; i++){
-      if(path[i] == '/'){sep = i;}
-      dir[i] = path[i];
+    const char *pathForResource(const char *name)
+    {
+        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:name]ofType: nil];
+        return [path fileSystemRepresentation];
     }
-    dir[sep+1] = '\0';
-    return dir;
-}
 
+    char *dirForResource(const char *name){
+        const char* path = pathForResource(name);
+        auto len =  strlen(path);
+        char* dir = (char*)malloc(len*sizeof(char));
+        int sep = 0;
+        for(int i =0; i<len; i++){
+          if(path[i] == '/'){sep = i;}
+          dir[i] = path[i];
+        }
+        dir[sep+1] = '\0';
+        return dir;
+    }
+}
 
 
 

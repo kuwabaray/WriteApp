@@ -8,6 +8,8 @@
 
 #ifndef MyUtils_h
 #define MyUtils_h
-const char *pathForResource(const char *name);
-char *dirForResource(const char *name);
+namespace WriteApp{
+    const char *pathForResource(const char *name);
+    char *dirForResource(const char *name);
+}
 #endif /* MyUtils_h */

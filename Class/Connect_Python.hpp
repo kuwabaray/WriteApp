@@ -11,14 +11,16 @@
 
 #include<Python.h>
 
-class Connector{
-private:
-    void initiate();
-public:
-    PyObject *pName, *pModule, *pTmp, *pFunc, *pArgs, *pPointa;
-    ~Connector();
-    //signed char
-    void hit_api(signed char *byteData);
-};
+namespace WriteApp {
 
+    class Connector{
+    private:
+        void initiate();
+    public:
+        PyObject *pName, *pModule, *pTmp, *pFunc, *pArgs, *pPointa;
+        ~Connector();
+        //signed char
+        void hit_api(signed char *byteData);
+    };
+}
 #endif /* Connect_Python_h */

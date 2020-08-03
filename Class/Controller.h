@@ -8,16 +8,10 @@
 //Controller_H
 #import <Cocoa/Cocoa.h>
 #import <memory>
-#include <vector>
 
 #import "Viewer.hpp"
 #import "Connect_Python.hpp"
 
-
-NSApplication* application;
-
-#define WIDTH 1024
-#define HEIGHT 768
 
 typedef enum mode {
     WRITE,
@@ -26,11 +20,11 @@ typedef enum mode {
 
 @interface Controller : NSWindow <NSApplicationDelegate>{
     std::shared_ptr<Viewer> appInstance;
+    std::vector<NSPoint> points;
+    Connector connector;
 }
 @property (nonatomic, retain) NSOpenGLView* glView;
 @property Mode appMode;
-@property std::vector<NSPoint> points;
-@property Connector connector;
 @property CGWindowID windowID;
 -(Point2D) convertPos:(NSPoint)point;
 -(void) mouseDown:(NSEvent *)event;
@@ -39,12 +33,3 @@ typedef enum mode {
 -(void)keyDown:(NSEvent *)event;
 -(signed char*) CaptureScreen;
 @end
-
-int main(int argc, const char * argv[]) {
-    Controller* app;
-    application = [NSApplication sharedApplication];
-    [NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
-    app = [[Controller alloc] initWithContentRect:NSMakeRect(0, 0, WIDTH, HEIGHT)              styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskClosable |  NSWindowStyleMaskMiniaturizable   backing:NSBackingStoreBuffered defer:YES];
-    [application setDelegate:app];
-    [application run];
-}

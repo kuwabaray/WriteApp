@@ -10,6 +10,8 @@
 		370BCCEB24CD9803004C48FA /* gcvision_api.py in Resources */ = {isa = PBXBuildFile; fileRef = 370BCCEA24CD9803004C48FA /* gcvision_api.py */; };
 		370BCCEF24CEAA0C004C48FA /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 370BCCEE24CEAA0C004C48FA /* Particle.png */; };
 		376BE24824D3D5B90032D1C5 /* Droplet.png in Resources */ = {isa = PBXBuildFile; fileRef = 376BE24724D3D5B80032D1C5 /* Droplet.png */; };
+		3779B51D24D7B00400BD0E7B /* Controller.h in Sources */ = {isa = PBXBuildFile; fileRef = 37C2578324B83A1200B09930 /* Controller.h */; };
+		3779B51E24D7B09600BD0E7B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3779B51924D7ADD000BD0E7B /* main.mm */; };
 		37A3370924CD506900FC3926 /* MyUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37A3370824CD506900FC3926 /* MyUtils.mm */; };
 		37A3370B24CD5C6B00FC3926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A3370A24CD5C6B00FC3926 /* Foundation.framework */; };
 		37C2575A24B837E600B09930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C2575924B837E600B09930 /* Assets.xcassets */; };
@@ -19,7 +21,6 @@
 		37C2577124B8385700B09930 /* Contents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37C2576F24B8385700B09930 /* Contents.cpp */; };
 		37C2577D24B8393E00B09930 /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37C2577B24B8393E00B09930 /* Line.cpp */; };
 		37C2578224B839B600B09930 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37C2578124B839B600B09930 /* Controller.mm */; };
-		37C2578424B83A1200B09930 /* Controller.h in Sources */ = {isa = PBXBuildFile; fileRef = 37C2578324B83A1200B09930 /* Controller.h */; };
 		37C2578624B83AA800B09930 /* shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = 37C2578524B83AA800B09930 /* shader.vert */; };
 		37C2578824B83AC800B09930 /* shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 37C2578724B83AC800B09930 /* shader.frag */; };
 		37C257A724B9A28700B09930 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C257A624B9A28600B09930 /* AppKit.framework */; };
@@ -47,6 +48,7 @@
 		370BCCF524CFF441004C48FA /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		376BE24724D3D5B80032D1C5 /* Droplet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Droplet.png; sourceTree = "<group>"; };
 		376BE24924D406650032D1C5 /* Connect_Python.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Connect_Python.hpp; sourceTree = "<group>"; };
+		3779B51924D7ADD000BD0E7B /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		37A3370824CD506900FC3926 /* MyUtils.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = MyUtils.mm; sourceTree = "<group>"; };
 		37A3370A24CD5C6B00FC3926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37C2575324B837E500B09930 /* WriteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WriteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 		37C2574A24B837E500B09930 = {
 			isa = PBXGroup;
 			children = (
+				3779B51924D7ADD000BD0E7B /* main.mm */,
 				3730B8BD24D6A10F0052DEB0 /* Other_Source */,
 				3730B8BC24D69DE10052DEB0 /* Utility */,
 				370BCCED24CEA974004C48FA /* Image */,
@@ -254,13 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3779B51E24D7B09600BD0E7B /* main.mm in Sources */,
+				3779B51D24D7B00400BD0E7B /* Controller.h in Sources */,
 				37C2577D24B8393E00B09930 /* Line.cpp in Sources */,
 				37C2576E24B8382500B09930 /* Viewer.cpp in Sources */,
 				37C2577124B8385700B09930 /* Contents.cpp in Sources */,
 				37C2578224B839B600B09930 /* Controller.mm in Sources */,
 				37C257B424BC02D900B09930 /* Connect_Python.cpp in Sources */,
 				37A3370924CD506900FC3926 /* MyUtils.mm in Sources */,
-				37C2578424B83A1200B09930 /* Controller.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

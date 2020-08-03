@@ -4,7 +4,7 @@ import json
 
 
 GOOGLE_CLOUD_VISION_API_URL = 'https://vision.googleapis.com/v1/images:annotate?key='
-API_KEY = 'API KEY'
+API_KEY = 'AIzaSyCCVtGCmcb6ijyUAZQ8sVeK1b4EkHa0k2k'
 
 
 def request_cloud_vison_api(image_base64):

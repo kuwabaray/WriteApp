@@ -12,17 +12,19 @@
 
 #include <stdio.h>
 
-    
-class Point2D{
-    public:
-        float x;
-        float y;
-        Point2D(){
-            x = 0;y=0;
-        }
-        Point2D(float x, float y){
-            this->x = x;this->y = y;
-        }
-    };
+namespace WriteApp {
+
+    class Point2D{
+        public:
+            float x;
+            float y;
+            Point2D(){
+                x = 0;y=0;
+            }
+            Point2D(float x, float y){
+                this->x = x;this->y = y;
+            }
+        };
+}
 #endif /* Point_hpp */
 
